@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 8080;
 const app = express();
 
 // Middlewares
+app.use(express.static('public'));
 
 // Routes
 app.get('/mensaje', (req, res) => {
